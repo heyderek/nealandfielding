@@ -12,6 +12,7 @@ $cream: #E8E2DA
 $white: #FFFFFF
 $cees: #CCCCCC
 $nines: #999999
+$sixes: #666666
 $threes: #333333
 
 //General
@@ -20,6 +21,21 @@ $threes: #333333
   width: $cols16
   margin: 0 auto
   position: relative
+.button
+  background: $nines
+  color: $white
+  border: 1px solid $cees
+  border-radius: 25px
+  padding: $gutter $gutter*2
+  text-shadow: 1px 1px 1px $threes 
+  display: block
+  margin: 0 0 $gutter 0
+  text-align: center
+  max-width: 10em
+  &:hover
+    background: $sixes
+    border: 1px solid $nines
+    color: $cees
 
 body
   @include habibi
@@ -76,7 +92,31 @@ a
 
 //Front Page
 
+.featured-content
+  background: $threes
+  img
+    width: 100%
+    height: auto
+  .caption
+    position: absolute
+    top: 25%
+    color: $white
+    .button
+      font-size: 30px
+
 //Content
+
+.featured-content, .content
+  ul, ol
+    margin: 0 0 $gutter $gutter/2
+  ul
+    padding: 0 0 0 $gutter/2
+    list-style: disc outside 
+  ol
+    padding: 0 0 0 $gutter/2
+    list-style: upper-roman outside 
+  p
+    margin: 0 0 $gutter 0
 
 //Sidebar
 
