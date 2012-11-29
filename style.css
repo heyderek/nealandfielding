@@ -189,3 +189,8 @@ body {
   src: url("fonts/habibi-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/habibi-regular-webfont.woff") format("woff"), url("fonts/habibi-regular-webfont.ttf") format("truetype"), url("fonts/habibi-regular-webfont.svg#habibiregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+.wrapper {
+  width: 78.75em;
+  margin: 0 auto;
+  position: relative; }
