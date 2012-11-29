@@ -17,6 +17,8 @@ $threes: #333333
 
 //General
 
+html
+  overflow-x: hidden
 .wrapper
   width: $cols16
   margin: 0 auto
@@ -101,6 +103,9 @@ a
     position: absolute
     top: 25%
     color: $white
+    width: $cols5
+    h3
+      white-space: nowrap
     .button
       font-size: 30px
 
@@ -122,30 +127,29 @@ a
 
 .content
   background: $cream
+  .wrapper
+    white-space: nowrap
 .primary,.secondary
   display: inline-block
   vertical-align: top
-  white-space: nowrap
   box-sizing: border-box
   background: $white
+  font-size: 16px
   box-shadow: 3px 3px 5px rgba(0,0,0,.5)
-  &>*
-    white-space: normal
 .primary
   width: $cols12
-  margin-left: $cols4
-  position: relative
-  left: $gutter
   padding: $gutter $cols1
 .secondary
   width: $cols4
   padding: $gutter
-  margin-left: -$cols16
 
 //Sidebar
 .secondary
   aside
     margin: 0 0 $gutter 0
 //Footer
-
+.colophon
+  padding: $gutter 0
+  .credits
+    text-align: center
 //Break Points

@@ -190,6 +190,9 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+html {
+  overflow-x: hidden; }
+
 .wrapper {
   width: 78.75em;
   margin: 0 auto;
@@ -277,7 +280,10 @@ a {
   .featured-content .caption {
     position: absolute;
     top: 25%;
-    color: white; }
+    color: white;
+    width: 23.75em; }
+    .featured-content .caption h3 {
+      white-space: nowrap; }
     .featured-content .caption .button {
       font-size: 30px; }
 
@@ -296,28 +302,29 @@ a {
 
 .content {
   background: #e8e2da; }
+  .content .wrapper {
+    white-space: nowrap; }
 
 .primary, .secondary {
   display: inline-block;
   vertical-align: top;
-  white-space: nowrap;
   box-sizing: border-box;
   background: white;
+  font-size: 16px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
-  .primary > *, .secondary > * {
-    white-space: normal; }
 
 .primary {
   width: 58.75em;
-  margin-left: 18.75em;
-  position: relative;
-  left: 20px;
   padding: 20px 3.75em; }
 
 .secondary {
   width: 18.75em;
-  padding: 20px;
-  margin-left: -78.75em; }
+  padding: 20px; }
 
 .secondary aside {
   margin: 0 0 20px 0; }
+
+.colophon {
+  padding: 20px 0; }
+  .colophon .credits {
+    text-align: center; }
