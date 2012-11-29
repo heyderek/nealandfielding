@@ -282,7 +282,8 @@ a {
       font-size: 30px; }
 
 .featured-content ul, .featured-content ol, .content ul, .content ol {
-  margin: 0 0 20px 10px; }
+  margin: 0 0 20px 10px;
+  line-height: 1.5; }
 .featured-content ul, .content ul {
   padding: 0 0 0 10px;
   list-style: disc outside; }
@@ -290,4 +291,33 @@ a {
   padding: 0 0 0 10px;
   list-style: upper-roman outside; }
 .featured-content p, .content p {
+  margin: 0 0 20px 0;
+  line-height: 1.35; }
+
+.content {
+  background: #e8e2da; }
+
+.primary, .secondary {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
+  .primary > *, .secondary > * {
+    white-space: normal; }
+
+.primary {
+  width: 58.75em;
+  margin-left: 18.75em;
+  position: relative;
+  left: 20px;
+  padding: 20px 3.75em; }
+
+.secondary {
+  width: 18.75em;
+  padding: 20px;
+  margin-left: -78.75em; }
+
+.secondary aside {
   margin: 0 0 20px 0; }

@@ -109,6 +109,7 @@ a
 .featured-content, .content
   ul, ol
     margin: 0 0 $gutter $gutter/2
+    line-height: 1.5
   ul
     padding: 0 0 0 $gutter/2
     list-style: disc outside 
@@ -117,9 +118,34 @@ a
     list-style: upper-roman outside 
   p
     margin: 0 0 $gutter 0
+    line-height: 1.35
+
+.content
+  background: $cream
+.primary,.secondary
+  display: inline-block
+  vertical-align: top
+  white-space: nowrap
+  box-sizing: border-box
+  background: $white
+  box-shadow: 3px 3px 5px rgba(0,0,0,.5)
+  &>*
+    white-space: normal
+.primary
+  width: $cols12
+  margin-left: $cols4
+  position: relative
+  left: $gutter
+  padding: $gutter $cols1
+.secondary
+  width: $cols4
+  padding: $gutter
+  margin-left: -$cols16
 
 //Sidebar
-
+.secondary
+  aside
+    margin: 0 0 $gutter 0
 //Footer
 
 //Break Points
