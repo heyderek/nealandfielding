@@ -21,7 +21,58 @@ $threes: #333333
   margin: 0 auto
   position: relative
 
+body
+  @include habibi
+  background: $threes
+h1,h2,h3,h4,h5,h6
+  margin: 0 0 $gutter 0
+h1,h3,h5
+  font-size: 44px
+h2,h4,h6
+  font-size: 32px
+a
+  text-decoration: none
+
 //Header
+
+.masthead
+  background: $cream
+.nav-wrap
+  background: $md_red
+  background: linear-gradient(to bottom, $lt_red 0%, $md_red 100%)
+  background: linear-gradient(top, $lt_red 0%, $md_red 100%)
+  border-bottom: 1px solid $white
+  a
+    color: $white
+    font-size: 18px
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5)
+  ul
+    text-align: right
+    li
+      display: inline-block
+      box-sizing: border-box
+      a
+      padding: $gutter
+      text-align: left
+      ul
+        display: none
+.branding,.logo
+  display: inline-block
+  box-sizing: border-box
+  vertical-align: top
+.logo
+  width: $cols3
+  position: relative
+  z-index: 9
+  margin-top: -8%
+  img
+    width: 100%
+    height: auto
+.location
+  position: absolute
+  right: 0
+  top: 10%
+  text-align: right
 
 //Front Page
 

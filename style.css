@@ -194,3 +194,61 @@ body {
   width: 78.75em;
   margin: 0 auto;
   position: relative; }
+
+body {
+  font-family: "habibiregular", Georgia, Times, serif;
+  background: #333333; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px 0; }
+
+h1, h3, h5 {
+  font-size: 44px; }
+
+h2, h4, h6 {
+  font-size: 32px; }
+
+a {
+  text-decoration: none; }
+
+.masthead {
+  background: #e8e2da; }
+
+.nav-wrap {
+  background: #752800;
+  background: linear-gradient(to bottom, #921a0a 0%, #752800 100%);
+  background: linear-gradient(top, #921a0a 0%, #752800 100%);
+  border-bottom: 1px solid white; }
+  .nav-wrap a {
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  .nav-wrap ul {
+    text-align: right; }
+    .nav-wrap ul li {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: left; }
+      .nav-wrap ul li ul {
+        display: none; }
+
+.branding, .logo {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top; }
+
+.logo {
+  width: 13.75em;
+  position: relative;
+  z-index: 9;
+  margin-top: -8%; }
+  .logo img {
+    width: 100%;
+    height: auto; }
+
+.location {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  text-align: right; }
