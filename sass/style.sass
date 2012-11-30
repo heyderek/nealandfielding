@@ -16,6 +16,10 @@ $sixes: #666666
 $threes: #333333
 $black: #000000
 
+@mixin navbg
+  background: linear-gradient(to bottom, $lt_red 0%, $md_red 100%)
+  background: linear-gradient(top, $lt_red 0%, $md_red 100%)
+
 //General
 
 html
@@ -170,7 +174,7 @@ nav[role="select"]
   top: -5em
   transition-duration: .3s
   transition-timing-function: ease-in-out
-  transition-property: background, color, padding, border-radius
+  transition-property: background, color, margin, border-radius
   &:hover
     margin-top: 1em
   img
@@ -272,7 +276,17 @@ nav[role="select"]
 
 //Break Points
 
-@media screen and (min-width: 0px) and (max-width: 699px)
+@media screen and (min-width: 960px) and (max-width: 1219px)
+  .wrapper
+    width: $cols12
+  .primary
+    width: $cols9
+    margin-left: $cols3
+  .secondary
+    width: $cols3
+    margin-left: -$cols12
+
+@media screen and (min-width: 540px) and (max-width: 959px)
   .wrapper
     width: $cols8
   nav[role="select"]
@@ -281,9 +295,83 @@ nav[role="select"]
     select
       display: block
       width: $cols8
-      background: #333
+      border: none
+      padding: 10px 0
+      @include navbg
       &:after
         position: absolute
         content: "Menu"
         right: 0
         bottom: -1em
+      option
+        padding: 10px 0
+        background: $white
+  .location
+    position: relative
+    margin-left: $cols3
+    text-align: left
+    padding: 0 $gutter $gutter
+  .featured-content
+    .caption
+      position: relative
+      width: $cols4
+      left: 0
+      margin: 0 auto
+      display: block
+  .primary,.secondary
+    width: $cols8
+    display: block
+    left: 0
+    margin: 0 auto
+  .primary
+    margin-bottom: 20px
+
+@media screen and (min-width: 0px) and (max-width: 539px)
+  .wrapper
+    width: $cols4
+  .logo
+    width: $cols2
+  nav[role="select"]
+    ul
+      display: none
+    select
+      display: block
+      width: $cols4
+      border: none
+      padding: 10px 0
+      @include navbg
+      &:after
+        position: absolute
+        content: "Menu"
+        right: 0
+        bottom: -1em
+      option
+        padding: 10px 0
+        background: $white
+  .branding
+    margin-left: 0
+    padding-top: 8em
+  .location
+    position: relative
+    margin-left: 0
+    text-align: left
+    padding: 0 $gutter $gutter
+  .featured-content
+    .caption
+      position: relative
+      width: 100%
+      text-align: center
+      left: 0
+      padding: 0
+      margin: 0 auto
+      display: block
+      h3
+        font-size: 30px
+  .primary,.secondary
+    width: 100%
+    display: block
+    left: 0
+    padding: $gutter
+    margin: 0 auto
+  .primary
+    margin-bottom: 20px

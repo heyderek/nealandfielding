@@ -342,7 +342,7 @@ nav[role="select"] > select {
   top: -5em;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
-  transition-property: background, color, padding, border-radius; }
+  transition-property: background, color, margin, border-radius; }
   .logo:hover {
     margin-top: 1em; }
   .logo img {
@@ -438,7 +438,18 @@ nav[role="select"] > select {
     .colophon a:hover {
       color: white; }
 
-@media screen and (min-width: 0px) and (max-width: 699px) {
+@media screen and (min-width: 960px) and (max-width: 1219px) {
+  .wrapper {
+    width: 58.75em; }
+
+  .primary {
+    width: 43.75em;
+    margin-left: 13.75em; }
+
+  .secondary {
+    width: 13.75em;
+    margin-left: -58.75em; } }
+@media screen and (min-width: 540px) and (max-width: 959px) {
   .wrapper {
     width: 38.75em; }
 
@@ -447,9 +458,92 @@ nav[role="select"] > select {
   nav[role="select"] select {
     display: block;
     width: 38.75em;
-    background: #333333; }
+    border: none;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #921a0a 0%, #752800 100%);
+    background: linear-gradient(top, #921a0a 0%, #752800 100%); }
     nav[role="select"] select:after {
       position: absolute;
       content: "Menu";
       right: 0;
-      bottom: -1em; } }
+      bottom: -1em; }
+    nav[role="select"] select option {
+      padding: 10px 0;
+      background: white; }
+
+  .location {
+    position: relative;
+    margin-left: 13.75em;
+    text-align: left;
+    padding: 0 20px 20px; }
+
+  .featured-content .caption {
+    position: relative;
+    width: 18.75em;
+    left: 0;
+    margin: 0 auto;
+    display: block; }
+
+  .primary, .secondary {
+    width: 38.75em;
+    display: block;
+    left: 0;
+    margin: 0 auto; }
+
+  .primary {
+    margin-bottom: 20px; } }
+@media screen and (min-width: 0px) and (max-width: 539px) {
+  .wrapper {
+    width: 18.75em; }
+
+  .logo {
+    width: 8.75em; }
+
+  nav[role="select"] ul {
+    display: none; }
+  nav[role="select"] select {
+    display: block;
+    width: 18.75em;
+    border: none;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #921a0a 0%, #752800 100%);
+    background: linear-gradient(top, #921a0a 0%, #752800 100%); }
+    nav[role="select"] select:after {
+      position: absolute;
+      content: "Menu";
+      right: 0;
+      bottom: -1em; }
+    nav[role="select"] select option {
+      padding: 10px 0;
+      background: white; }
+
+  .branding {
+    margin-left: 0;
+    padding-top: 8em; }
+
+  .location {
+    position: relative;
+    margin-left: 0;
+    text-align: left;
+    padding: 0 20px 20px; }
+
+  .featured-content .caption {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    display: block; }
+    .featured-content .caption h3 {
+      font-size: 30px; }
+
+  .primary, .secondary {
+    width: 100%;
+    display: block;
+    left: 0;
+    padding: 20px;
+    margin: 0 auto; }
+
+  .primary {
+    margin-bottom: 20px; } }
