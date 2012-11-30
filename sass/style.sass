@@ -44,12 +44,16 @@ body
   background: $threes
 h1,h2,h3,h4,h5,h6
   margin: 0 0 $gutter 0
+  font-weight: normal
 h1,h3,h5
   font-size: 44px
 h2,h4,h6
   font-size: 32px
 a
   text-decoration: none
+  color: $md_red
+  &:hover
+    color: $lt_red
 
 //Header
 
@@ -64,23 +68,42 @@ a
     color: $white
     font-size: 18px
     text-shadow: 1px 1px 1px rgba(0,0,0,.5)
+    text-transform: uppercase
   ul
     text-align: right
+    white-space: nowrap
     li
       display: inline-block
       box-sizing: border-box
+      white-space: nowrap
+      font-size: 0
+      border:
+        left: 1px solid $lt_red
+        right: 1px solid $drk_red
       a
-      padding: $gutter
-      text-align: left
+        padding: $gutter
+        text-align: center
+        display: block
+        font-size: 18px
+        &:hover
+          background: $drk_red
+        
       ul
         display: none
-.branding,.logo
-  display: inline-block
-  box-sizing: border-box
-  vertical-align: top
+.branding
+  padding: $gutter 0
+  margin-left: $cols3
+  padding-left: $gutter
+  h1
+    span
+      font-size: 24px
+      display: block
+  h2
+    position: absolute
+    text-indent: -9999em
 .logo
   width: $cols3
-  position: relative
+  position: absolute
   z-index: 9
   margin-top: -8%
   img
@@ -102,6 +125,8 @@ a
   .caption
     position: absolute
     top: 25%
+    left: $cols1
+    padding-left: $gutter
     color: $white
     width: $cols5
     h3
@@ -131,25 +156,41 @@ a
     white-space: nowrap
 .primary,.secondary
   display: inline-block
+  white-space: normal
   vertical-align: top
   box-sizing: border-box
   background: $white
   font-size: 16px
-  box-shadow: 3px 3px 5px rgba(0,0,0,.5)
+  box-shadow: 0 0 3px rgba(0,0,0,.5)
 .primary
   width: $cols12
+  margin-left: $cols4
   padding: $gutter $cols1
+  position: relative
+  left: 20px
 .secondary
   width: $cols4
   padding: $gutter
+  margin-left: -$cols16
+  position: relative
+  left: 20px
+  h1,h2,h3,h4,h5,h6
+    font-size: 22px
 
 //Sidebar
 .secondary
   aside
     margin: 0 0 $gutter 0
+
 //Footer
 .colophon
   padding: $gutter 0
+  color: $nines
   .credits
     text-align: center
+  a
+    color: $cees
+    &:hover
+      color: $white
+
 //Break Points

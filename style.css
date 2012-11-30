@@ -219,7 +219,8 @@ body {
   background: #333333; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  font-weight: normal; }
 
 h1, h3, h5 {
   font-size: 44px; }
@@ -228,7 +229,10 @@ h2, h4, h6 {
   font-size: 32px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #752800; }
+  a:hover {
+    color: #921a0a; }
 
 .masthead {
   background: #e8e2da; }
@@ -241,25 +245,42 @@ a {
   .nav-wrap a {
     color: white;
     font-size: 18px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase; }
   .nav-wrap ul {
-    text-align: right; }
+    text-align: right;
+    white-space: nowrap; }
     .nav-wrap ul li {
       display: inline-block;
       box-sizing: border-box;
-      padding: 20px;
-      text-align: left; }
+      white-space: nowrap;
+      font-size: 0;
+      border-left: 1px solid #921a0a;
+      border-right: 1px solid #641c00; }
+      .nav-wrap ul li a {
+        padding: 20px;
+        text-align: center;
+        display: block;
+        font-size: 18px; }
+        .nav-wrap ul li a:hover {
+          background: #641c00; }
       .nav-wrap ul li ul {
         display: none; }
 
-.branding, .logo {
-  display: inline-block;
-  box-sizing: border-box;
-  vertical-align: top; }
+.branding {
+  padding: 20px 0;
+  margin-left: 13.75em;
+  padding-left: 20px; }
+  .branding h1 span {
+    font-size: 24px;
+    display: block; }
+  .branding h2 {
+    position: absolute;
+    text-indent: -9999em; }
 
 .logo {
   width: 13.75em;
-  position: relative;
+  position: absolute;
   z-index: 9;
   margin-top: -8%; }
   .logo img {
@@ -280,6 +301,8 @@ a {
   .featured-content .caption {
     position: absolute;
     top: 25%;
+    left: 3.75em;
+    padding-left: 20px;
     color: white;
     width: 23.75em; }
     .featured-content .caption h3 {
@@ -307,24 +330,38 @@ a {
 
 .primary, .secondary {
   display: inline-block;
+  white-space: normal;
   vertical-align: top;
   box-sizing: border-box;
   background: white;
   font-size: 16px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
 
 .primary {
   width: 58.75em;
-  padding: 20px 3.75em; }
+  margin-left: 18.75em;
+  padding: 20px 3.75em;
+  position: relative;
+  left: 20px; }
 
 .secondary {
   width: 18.75em;
-  padding: 20px; }
+  padding: 20px;
+  margin-left: -78.75em;
+  position: relative;
+  left: 20px; }
+  .secondary h1, .secondary h2, .secondary h3, .secondary h4, .secondary h5, .secondary h6 {
+    font-size: 22px; }
 
 .secondary aside {
   margin: 0 0 20px 0; }
 
 .colophon {
-  padding: 20px 0; }
+  padding: 20px 0;
+  color: #999999; }
   .colophon .credits {
     text-align: center; }
+  .colophon a {
+    color: #cccccc; }
+    .colophon a:hover {
+      color: white; }
