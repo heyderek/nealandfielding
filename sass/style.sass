@@ -24,25 +24,6 @@ html
   width: $cols16
   margin: 0 auto
   position: relative
-.button
-  background: $nines
-  color: $white
-  border: 2px solid $cees
-  border-radius: 25px
-  padding: $gutter $gutter*2
-  text-shadow: 1px 1px 1px $threes 
-  display: block
-  margin: 0 0 $gutter 0
-  text-align: center
-  max-width: 8em
-  transition-duration: .3s
-  transition-timing-function: ease-in-out
-  transition-property: background, color, padding, border-radius
-  &:hover
-    background: $sixes
-    border: 2px solid $nines
-    color: $cees
-    padding: $gutter 60px
 body
   @include habibi
   background: $threes
@@ -62,6 +43,26 @@ a
     transition: all 300ms ease-in
 
 //UI Elements
+
+.button
+  background: $nines
+  color: $white
+  border: 2px solid $cees
+  border-radius: 25px
+  padding: $gutter $gutter*2
+  text-shadow: 1px 1px 1px $threes 
+  display: block
+  margin: 0 0 $gutter 0
+  text-align: center
+  max-width: 8em
+  transition-duration: .3s
+  transition-timing-function: ease-in-out
+  transition-property: background, color, padding, border-radius
+  &:hover
+    background: $sixes
+    border: 2px solid $nines
+    color: $cees
+    padding: $gutter 60px
 
 .ribbon
   width: 100%
@@ -167,6 +168,11 @@ nav[role="select"]
   position: absolute
   z-index: 9
   top: -5em
+  transition-duration: .3s
+  transition-timing-function: ease-in-out
+  transition-property: background, color, padding, border-radius
+  &:hover
+    margin-top: 1em
   img
     width: 100%
     height: auto
