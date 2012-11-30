@@ -64,32 +64,48 @@ a
   background: linear-gradient(to bottom, $lt_red 0%, $md_red 100%)
   background: linear-gradient(top, $lt_red 0%, $md_red 100%)
   border-bottom: 1px solid $white
-  a
-    color: $white
-    font-size: 18px
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5)
-    text-transform: uppercase
   ul
     text-align: right
     white-space: nowrap
+    font-size: 0
+    a
+      color: $white
+      text-shadow: 1px 1px 1px rgba(0,0,0,.5)
+      text-transform: uppercase
+      padding: $gutter
+      text-align: center
     li
       display: inline-block
       box-sizing: border-box
       white-space: nowrap
-      font-size: 0
       border:
         left: 1px solid $lt_red
         right: 1px solid $drk_red
-      a
-        padding: $gutter
-        text-align: center
-        display: block
-        font-size: 18px
-        &:hover
+      &:hover
+        ul
+          display: block
+          position: absolute
+          top: 10em
+          z-index: 9
+          width: 10em
           background: $drk_red
-        
+          li
+            display: block
+            border:
+              left: none
+              right: none
+              bottom: 1px dotted $md_red
+      &:first-child
+        border-left: none
+      &:last-child
+        border-right: none
       ul
         display: none
+      a
+        display: block
+        font-size: 18px
+      &:hover
+        background: $drk_red
 .branding
   padding: $gutter 0
   margin-left: $cols3

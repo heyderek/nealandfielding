@@ -242,30 +242,45 @@ a {
   background: linear-gradient(to bottom, #921a0a 0%, #752800 100%);
   background: linear-gradient(top, #921a0a 0%, #752800 100%);
   border-bottom: 1px solid white; }
-  .nav-wrap a {
-    color: white;
-    font-size: 18px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    text-transform: uppercase; }
   .nav-wrap ul {
     text-align: right;
-    white-space: nowrap; }
+    white-space: nowrap;
+    font-size: 0; }
+    .nav-wrap ul a {
+      color: white;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+      padding: 20px;
+      text-align: center; }
     .nav-wrap ul li {
       display: inline-block;
       box-sizing: border-box;
       white-space: nowrap;
-      font-size: 0;
       border-left: 1px solid #921a0a;
       border-right: 1px solid #641c00; }
-      .nav-wrap ul li a {
-        padding: 20px;
-        text-align: center;
+      .nav-wrap ul li:hover ul {
         display: block;
-        font-size: 18px; }
-        .nav-wrap ul li a:hover {
-          background: #641c00; }
+        position: absolute;
+        top: 10em;
+        z-index: 9;
+        width: 10em;
+        background: #641c00; }
+        .nav-wrap ul li:hover ul li {
+          display: block;
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px dotted #752800; }
+      .nav-wrap ul li:first-child {
+        border-left: none; }
+      .nav-wrap ul li:last-child {
+        border-right: none; }
       .nav-wrap ul li ul {
         display: none; }
+      .nav-wrap ul li a {
+        display: block;
+        font-size: 18px; }
+      .nav-wrap ul li:hover {
+        background: #641c00; }
 
 .branding {
   padding: 20px 0;
