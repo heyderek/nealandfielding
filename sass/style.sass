@@ -7,13 +7,14 @@
 $lt_red: #921A0A
 $md_red: #752800
 $drk_red: #641C00
-$purple: #921A0A
+$purple: #3E1922 
 $cream: #E8E2DA
 $white: #FFFFFF
 $cees: #CCCCCC
 $nines: #999999
 $sixes: #666666
 $threes: #333333
+$black: #000000
 
 //General
 
@@ -42,6 +43,7 @@ html
 body
   @include habibi
   background: $threes
+  color: $threes
 h1,h2,h3,h4,h5,h6
   margin: 0 0 $gutter 0
   font-weight: normal
@@ -54,6 +56,32 @@ a
   color: $md_red
   &:hover
     color: $lt_red
+
+//UI Elements
+
+.ribbon
+  width: 110%
+  left: -31px
+  position: relative
+  white-space: nowrap
+  background: $md_red
+  text-align: center
+  text-shadow: 0 0 2px rgba(0,0,0,.5)
+  padding: .75em 0
+  color: $white
+  box-shadow: 0 0 1px rgba(0,0,0,.5)
+  margin: 0 auto $gutter*2
+  .ribbon-content
+    &:before
+      content: ""
+      position: absolute
+      display: block
+      border-style: solid
+      border-color: $purple transparent transparent transparent
+      bottom: -.5em
+    &:before
+      left: 0
+      border-width: .5em 0 0 .5em
 
 //Header
 
@@ -138,8 +166,10 @@ a
 .location
   position: absolute
   right: 0
-  top: 10%
+  top: 30%
   text-align: right
+  address
+    font-style: normal
 
 //Front Page
 
@@ -159,8 +189,10 @@ a
     color: $white
     z-index: 3
     width: $cols5
+    text-shadow: 1px 1px 0 $black
     h3
       white-space: nowrap
+      text-shadow: 3px 3px 0 $black
     .button
       font-size: 30px
 
@@ -175,7 +207,7 @@ a
     list-style: disc outside 
   ol
     padding: 0 0 0 $gutter/2
-    list-style: upper-roman outside 
+    list-style: decimal outside 
   p
     margin: 0 0 $gutter 0
     line-height: 1.35

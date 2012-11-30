@@ -216,7 +216,8 @@ html {
 
 body {
   font-family: "habibiregular", Georgia, Times, serif;
-  background: #333333; }
+  background: #333333;
+  color: #333333; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
@@ -233,6 +234,29 @@ a {
   color: #752800; }
   a:hover {
     color: #921a0a; }
+
+.ribbon {
+  width: 110%;
+  left: -31px;
+  position: relative;
+  white-space: nowrap;
+  background: #752800;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  padding: 0.75em 0;
+  color: white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  margin: 0 auto 40px; }
+  .ribbon .ribbon-content:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #3e1922 transparent transparent transparent;
+    bottom: -0.5em; }
+  .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 0.5em 0 0 0.5em; }
 
 .masthead {
   background: #e8e2da; }
@@ -315,8 +339,10 @@ a {
 .location {
   position: absolute;
   right: 0;
-  top: 10%;
+  top: 30%;
   text-align: right; }
+  .location address {
+    font-style: normal; }
 
 .featured-content {
   background: #333333; }
@@ -333,9 +359,11 @@ a {
     padding-left: 20px;
     color: white;
     z-index: 3;
-    width: 23.75em; }
+    width: 23.75em;
+    text-shadow: 1px 1px 0 black; }
     .featured-content .caption h3 {
-      white-space: nowrap; }
+      white-space: nowrap;
+      text-shadow: 3px 3px 0 black; }
     .featured-content .caption .button {
       font-size: 30px; }
 
@@ -347,7 +375,7 @@ a {
   list-style: disc outside; }
 .featured-content ol, .content ol {
   padding: 0 0 0 10px;
-  list-style: upper-roman outside; }
+  list-style: decimal outside; }
 .featured-content p, .content p {
   margin: 0 0 20px 0;
   line-height: 1.35; }
