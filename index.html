@@ -6,13 +6,14 @@
   <link rel="stylesheet" href="style.css" title="stylesheet" type="text/css" media="screen" charset="utf-8">
   <script src="js/jquery.js" charset="utf-8"></script>
   <script src="js/prefixfree.min.js" charset="utf-8"></script>
+  <script src="js/custom.js" charset="utf-8"></script>
   <title>The Law Offices of Fielding and Neal</title>
   </head>
   <body>
     <div class="page">
       <section class="masthead">
         <div class="nav-wrap">
-          <nav class="wrapper">
+          <nav class="wrapper" role="select">
               <ul class="menu">
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
@@ -27,6 +28,11 @@
                   </ul>
                 </li>
               </ul>
+              <select onchange="if (this.value) window.location.href = this.value;">
+                <option Value="#">Option 1</option>
+                <option Value="#">Option 1</option>
+                <option Value="#">Option 1</option>
+              </select>
           </nav><!-- /.wrapper -->
         </div><!-- /.nav-wrap -->
         <header class="wrapper">

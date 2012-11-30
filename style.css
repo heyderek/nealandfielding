@@ -261,6 +261,9 @@ a {
 .masthead {
   background: #e8e2da; }
 
+nav[role="select"] > select {
+  display: none; }
+
 .nav-wrap {
   background: #752800;
   background: linear-gradient(to bottom, #921a0a 0%, #752800 100%);
@@ -331,7 +334,7 @@ a {
   width: 13.75em;
   position: absolute;
   z-index: 9;
-  margin-top: -8%; }
+  top: -5em; }
   .logo img {
     width: 100%;
     height: auto; }
@@ -424,3 +427,19 @@ a {
     color: #cccccc; }
     .colophon a:hover {
       color: white; }
+
+@media screen and (min-width: 0px) and (max-width: 699px) {
+  .wrapper {
+    width: 38.75em; }
+
+  nav[role="select"] ul {
+    display: none; }
+  nav[role="select"] select {
+    display: block;
+    width: 38.75em;
+    background: #333333; }
+    nav[role="select"] select:after {
+      position: absolute;
+      content: "Menu";
+      right: 0;
+      bottom: -1em; } }

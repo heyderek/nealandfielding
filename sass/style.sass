@@ -87,6 +87,9 @@ a
 
 .masthead
   background: $cream
+nav[role="select"]
+  &> select
+    display: none
 .nav-wrap
   background: $md_red
   background: linear-gradient(to bottom, $lt_red 0%, $md_red 100%)
@@ -159,7 +162,7 @@ a
   width: $cols3
   position: absolute
   z-index: 9
-  margin-top: -8%
+  top: -5em
   img
     width: 100%
     height: auto
@@ -258,3 +261,19 @@ a
       color: $white
 
 //Break Points
+
+@media screen and (min-width: 0px) and (max-width: 699px)
+  .wrapper
+    width: $cols8
+  nav[role="select"]
+    ul
+      display: none
+    select
+      display: block
+      width: $cols8
+      background: #333
+      &:after
+        position: absolute
+        content: "Menu"
+        right: 0
+        bottom: -1em
