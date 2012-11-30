@@ -33,7 +33,7 @@ html
   display: block
   margin: 0 0 $gutter 0
   text-align: center
-  max-width: 10em
+  max-width: 8em
   &:hover
     background: $sixes
     border: 1px solid $nines
@@ -68,6 +68,27 @@ a
     text-align: right
     white-space: nowrap
     font-size: 0
+    ul
+      position: absolute
+      top: 100%
+      z-index: 9
+      background: $drk_red
+      border-radius: 0 0 8px 8px
+      overflow: hidden
+      box-shadow: 0 0 3px rgba(0,0,0,.5)
+      li
+        display: block
+        border:
+          left: none
+          right: none
+          bottom: 2px dotted $md_red
+        &:last-child
+          border: none
+        a
+          text-align: left
+          width: $cols3
+          &:hover
+            background: $lt_red
     a
       color: $white
       text-shadow: 1px 1px 1px rgba(0,0,0,.5)
@@ -84,17 +105,6 @@ a
       &:hover
         ul
           display: block
-          position: absolute
-          top: 10em
-          z-index: 9
-          width: 10em
-          background: $drk_red
-          li
-            display: block
-            border:
-              left: none
-              right: none
-              bottom: 1px dotted $md_red
       &:first-child
         border-left: none
       &:last-child
@@ -138,12 +148,16 @@ a
   img
     width: 100%
     height: auto
+    position: relative
+    z-index: 2
+    display: block
   .caption
     position: absolute
     top: 25%
     left: $cols1
     padding-left: $gutter
     color: $white
+    z-index: 3
     width: $cols5
     h3
       white-space: nowrap
@@ -168,6 +182,8 @@ a
 
 .content
   background: $cream
+  position: relative
+  z-index: 0
   .wrapper
     white-space: nowrap
 .primary,.secondary
