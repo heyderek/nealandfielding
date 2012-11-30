@@ -236,14 +236,14 @@ a {
     color: #921a0a; }
 
 .ribbon {
-  width: 110%;
+  width: 100%;
   left: -31px;
   position: relative;
   white-space: nowrap;
   background: #752800;
-  text-align: center;
+  text-align: left;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  padding: 0.75em 0;
+  padding: 0.75em 20px;
   color: white;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   margin: 0 auto 40px; }
