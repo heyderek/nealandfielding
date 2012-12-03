@@ -7,20 +7,7 @@
             <?php the_content(); ?>
             <?php endwhile; ?>
           </div><!-- /.primary -->
-          <div class="secondary">
-            <aside>
-              <h3 class="ribbon"><strong class="ribbon-content">Heading 1</strong></h3>
-              <ul>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-                <li>List Item</li>
-              </ul>
-            </aside>
-          </div><!-- /.secondary -->
+         <?php get_sidebar(); ?>
         </div><!-- /.wrapper -->
       </section><!-- /.content -->
     <?php get_footer(); ?>
