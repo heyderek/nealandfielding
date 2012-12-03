@@ -2,12 +2,11 @@
       <section class="content">
         <div class="wrapper">
           <div class="primary">
-          <?php while(have_posts()) : the_post(); ?>
-            <article>
-              <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-              <?php the_content(); ?>
-            </article>
-          <?php endwhile; ?>
+            <?php while(have_posts()) : the_post(); ?>
+            <h3><?php the_title(); ?></h3>
+            <h4><?php the_date('F, Y'); ?></h4>
+            <?php the_content(); ?>
+            <?php endwhile; ?>
           </div><!-- /.primary -->
           <div class="secondary">
             <aside>
@@ -25,4 +24,4 @@
           </div><!-- /.secondary -->
         </div><!-- /.wrapper -->
       </section><!-- /.content -->
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

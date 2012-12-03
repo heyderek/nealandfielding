@@ -425,6 +425,15 @@ nav[role="select"] > select {
   padding: 20px 3.75em;
   position: relative;
   left: 20px; }
+  .primary h2, .primary h4, .primary h6 {
+    font-size: 22px;
+    color: #999999; }
+  .primary article {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+    .primary article:first-child {
+      border: none; }
 
 .secondary {
   width: 18.75em;
