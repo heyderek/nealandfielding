@@ -41,7 +41,7 @@
           </nav><!-- /.wrapper -->
         </div><!-- /.nav-wrap -->
         <header class="wrapper">
-          <a class="logo" href="<?php home_url('/'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
+          <a class="logo" href="<?php echo home_url('/'); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" /></a>
           <hgroup class="branding">
             <h1><span>The Law Offices of </span><?php bloginfo('name'); ?></h1>
             <h2>Attorneys at law</h2>
