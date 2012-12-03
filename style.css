@@ -487,7 +487,7 @@ nav[role="select"] > select {
       right: 0;
       bottom: -1em; }
     nav[role="select"] select option {
-      padding: 10px 0;
+      padding: 10px;
       background: white; }
 
   .location {
@@ -533,7 +533,7 @@ nav[role="select"] > select {
       right: 0;
       bottom: -1em; }
     nav[role="select"] select option {
-      padding: 10px 0;
+      padding: 10px;
       background: white; }
 
   .branding {

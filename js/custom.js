@@ -16,7 +16,7 @@ $(document).ready(function(){
     //Find the links within the nav, and convert them to options
     $(".masthead nav a").each(function() {
      var navLink = $(this);
-    //Grab the values and attricute them to the proper option element
+    //Grab the values and attribute them to the proper option element
     $("<option />", {
          "value" : navLink.attr("href"),
          "text" : navLink.text()
