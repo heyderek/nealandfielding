@@ -31,13 +31,6 @@
         <div class="nav-wrap">
           <nav class="wrapper" role="select">
               <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
-              <?php wp_nav_menu(array(
-                'menu_class'=>'something',
-                'container'=>'',
-                'before'=>'<option>',
-                'after'=>'</option',
-                'items_wrap' => '<select>%3$s</select>'
-                )); ?>
           </nav><!-- /.wrapper -->
         </div><!-- /.nav-wrap -->
         <header class="wrapper">
